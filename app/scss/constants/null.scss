@@ -1,0 +1,29 @@
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a[class]{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[class]{
+  list-style: none;
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}

@@ -1,0 +1,48 @@
+$default: #333333;
+$light-text: #7C7C7C;
+$accent: #0CAB4C;
+$accent-h: #0ec859;
+$bg: #F1F6F9;
+$bg-cart: #F5F5F5E6;
+
+$border-medium: #CECECE;
+$border-light: #EBEBEB;
+$shadow: 0px 1px 5.9px #D2D2D2;
+$gradient: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.93) 39.92%, rgba(255, 255, 255, 0) 68.72%);
+
+%roboto-100 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+%roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%roboto-900 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
