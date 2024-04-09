@@ -1,0 +1,77 @@
+.front-block {
+  max-width: 1880px;
+  margin: 0 auto 60px;
+  background-image: url('../images/front-page/1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  padding: 20px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__title {
+    max-width: 751px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size: 44px;
+    max-width: 550px;
+    line-height: calc(50/44*100%);
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__btn {
+    padding: 24px 0;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+    border-radius: 12px;
+    color: #FFFFFF;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:first-child::before {
+      background-image: url('../images/icons/mitten.svg');
+    }
+
+    &:last-child {
+      background-color: $primary-2;
+      max-width: 320px;
+
+      &::before {
+        background-image: url('../images/icons/signs.svg');
+      }
+    }
+  }
+
+  &__right-wrapper{
+    width: 400px;
+    height: 712px;
+    position: relative;
+  }
+  &__right-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 26px;
+  }
+
+}

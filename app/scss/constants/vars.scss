@@ -1,48 +1,52 @@
-$default: #333333;
-$light-text: #7C7C7C;
-$accent: #0CAB4C;
-$accent-h: #0ec859;
-$bg: #F1F6F9;
-$bg-cart: #F5F5F5E6;
+$primary:   #EC1111;
+$primary-2: #DBA250;
+$accent:    #2D201D;
+$default:   #464451;
+$default-4: #46445166;
+$default-5: #46445180;
+$default-6: #46445199;
+$default-8: #464451cc;
+$bg:        #F8F8F8;
+$bg-green:  #25D366;
 
-$border-medium: #CECECE;
-$border-light: #EBEBEB;
-$shadow: 0px 1px 5.9px #D2D2D2;
-$gradient: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.93) 39.92%, rgba(255, 255, 255, 0) 68.72%);
-
-%roboto-100 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+%bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-%roboto-300 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-%roboto-400 {
-  font-family: "Roboto", sans-serif;
+%jost-400 {
+  font-family: "Jost-Regular";
   font-weight: 400;
   font-style: normal;
 }
 
-%roboto-500 {
-  font-family: "Roboto", sans-serif;
+%jost-500 {
+  font-family: "Jost-Medium";
   font-weight: 500;
   font-style: normal;
 }
 
-%roboto-700 {
-  font-family: "Roboto", sans-serif;
+%jost-600 {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+}
+
+%jost-700 {
+  font-family: "Jost-Bold";
   font-weight: 700;
   font-style: normal;
 }
 
-%roboto-900 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+%jost-800 {
+  font-family: "Jost-ExtraBold";
+  font-weight: 800;
   font-style: normal;
 }
 
+%jost-900 {
+  font-family: "Jost-Black";
+  font-weight: 900;
+  font-style: normal;
+}

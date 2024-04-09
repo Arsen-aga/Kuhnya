@@ -1,0 +1,22 @@
+.filters-action {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 240px));
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+
+  &__btn {
+    height: 80px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &.active, &:hover{
+      border-color: $primary-2;
+      background-color: $primary-2;
+      color: white;
+    }
+    &::before{
+      display: none;
+    }
+  }
+}

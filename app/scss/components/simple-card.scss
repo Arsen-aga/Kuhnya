@@ -1,0 +1,53 @@
+.simple-card {
+  padding-bottom: 30px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 35px;
+    height: 380px;
+  }
+
+  &__item-wrapper {
+    height: 46px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__item-img {
+    position: absolute;
+    height: 100%;
+  }
+
+  &__item-title {
+    @extend %jost-500;
+    font-size: 28px;
+    line-height: calc(36/28*100%);
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    margin-bottom: auto;
+  }
+
+  &__item-btn {
+    height: 60px;
+    border-radius: 12px;
+    &::before{
+      background-image: url('../images/icons/arrow-top.svg');
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+}
