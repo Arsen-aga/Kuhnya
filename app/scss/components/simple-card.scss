@@ -1,9 +1,10 @@
 .simple-card {
   padding-bottom: 30px;
 
+
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
     align-items: center;
     gap: 30px;
   }
@@ -15,11 +16,11 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 35px;
-    height: 380px;
+    height: 100%;
   }
 
   &__item-wrapper {
-    height: 46px;
+    min-height: 46px;
     position: relative;
     margin-bottom: 15px;
   }
@@ -37,17 +38,57 @@
   }
 
   &__item-text {
-    margin-bottom: auto;
+    margin-bottom: 30px;
   }
 
   &__item-btn {
     height: 60px;
     border-radius: 12px;
-    &::before{
+    margin-top: auto;
+
+    &::before {
       background-image: url('../images/icons/arrow-top.svg');
       width: 12px;
       height: 12px;
     }
   }
+}
 
+@media (max-width: 1230px) {
+  .simple-card {
+    &__items {
+      gap: 10px;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+
+    &__item-title {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .simple-card {
+    &__items {
+      overflow: auto;
+      padding-bottom: 15px;
+    }
+
+    &__item-wrapper {
+      margin-bottom: 10px;
+      min-height: 40px;
+    }
+
+
+    &__item-text {
+      margin-bottom: 15px;
+    }
+
+    &__item-btn {
+      font-size: 10px;
+    }
+  }
 }

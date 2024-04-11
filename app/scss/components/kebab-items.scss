@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    &.hidden{
+
+    &.hidden {
       display: none;
     }
   }
@@ -97,4 +98,55 @@
     }
   }
 
+}
+
+@media (max-width: 1230px) {
+  .kebab-items {
+    &__top {
+      padding: 20px;
+    }
+
+    &__top-title {
+      font-size: 26px;
+    }
+
+    &__bottom-consult {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .kebab-items {
+    overflow: auto;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .kebab-items {
+    &__item {
+      padding: 10px;
+    }
+
+    &__center {
+      min-height: 250px;
+    }
+
+    &__top-text {
+      font-size: 16px;
+    }
+
+    &__top-title {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    &__top-link {
+      margin-top: 5px;
+    }
+  }
 }

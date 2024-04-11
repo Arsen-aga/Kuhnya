@@ -29,3 +29,30 @@
     color: white;
   }
 }
+
+
+@media (max-width: 1230px) {
+  .meeting {
+    &__items {
+      gap: 20px;
+    }
+
+    &__item {
+      padding-bottom: 60.74%;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .meeting {
+    margin-bottom: 40px;
+
+    &__items {
+      overflow: auto;
+      grid-template-columns: repeat(3, minmax(320px, 1fr));
+      gap: 10px;
+      padding-bottom: 15px;
+    }
+  }
+
+}

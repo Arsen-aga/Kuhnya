@@ -10,12 +10,24 @@ body {
   margin: 20px auto 100px;
 }
 
+@media (max-width: 991.8px) {
+  .main{
+    margin-bottom: 40px;
+  }
+}
+
 ._main-title {
   @extend %jost-600;
   font-size: 58px;
   line-height: calc(68/58*100%);
   text-transform: uppercase;
   color: white;
+}
+
+@media (max-width: 1230px) {
+  ._main-title {
+    font-size: 44px;
+  }
 }
 
 ._title {
@@ -30,6 +42,7 @@ body {
   }
 }
 
+
 ._title-light {
   font-size: 54px;
   color: white;
@@ -37,12 +50,29 @@ body {
   @extend %jost-400;
   margin-bottom: 50px;
   text-align: center;
-
+  
   span {
     @extend %jost-500;
   }
 }
 
+@media (max-width: 1230px) {
+  ._title, ._title-light {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:  767.98px) {
+  ._title, ._title-light {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width:  575.98px) {
+  ._title, ._title-light {
+    font-size: 32px;
+  }
+}
 ._main-btn {
   background-color: $primary;
   @extend %jost-700;
@@ -115,6 +145,7 @@ body {
   }
 }
 
+
 @media (max-width: 991.8px) {
   .container {
     max-width: 750px;
@@ -150,28 +181,49 @@ body {
   }
 }
 
-.disconunt-block{
+.disconunt-block {
   position: absolute;
   width: 90px;
   height: 91px;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__text{
+
+  &__text {
     position: relative;
     z-index: 1;
     @extend %jost-700;
-      font-size: 24px;
-      line-height: calc(32/24*100%);
-      text-align: center;
-      text-transform: uppercase;
-      color: white;
+    font-size: 24px;
+    line-height: calc(32/24*100%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
   }
-  &__img{
+
+  &__img {
     position: absolute;
     height: 100%;
     width: 100%;
     @extend %bg;
     background-size: auto;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visible-hand {
+  display: none;
+}
+
+@media (max-width: 991.8px) {
+  .visible-hand {
+    display: flex;
+    justify-content: center;
+
+    .tooltip-horizontal-scroll-icon_hand {
+      fill: $primary;
+    }
   }
 }

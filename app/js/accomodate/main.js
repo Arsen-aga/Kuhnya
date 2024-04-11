@@ -1,10 +1,32 @@
+
+const burger = document.querySelector('.burger');
+const popupMenu = document.querySelector('.popup-menu');
+const body = document.querySelector('body');
+
+burger.addEventListener('click', function() {
+  burger.classList.toggle("active");
+  popupMenu.classList.toggle('active');
+  body.classList.toggle('no-scroll');
+})
+
+
+
+
 const swiper = new Swiper(".slider", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 12,
   centeredSlides: true,
   autoplay: {
     delay: 2000,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 3,
+    },
+    750: {
+      slidesPerView: 4,
+    },
   },
 });
 

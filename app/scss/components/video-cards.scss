@@ -47,3 +47,37 @@
     font-size: 16px;
   }
 }
+
+
+@media (max-width: 1230px) {
+  .video-cards {
+    &__items {
+      margin-bottom: 30px;
+    }
+
+    &__item-wrapper {
+      height: 350px;
+    }
+
+    &__item-btn {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .video-cards {
+    &__items {
+      padding-bottom: 15px;
+      grid-template-columns: repeat(4, minmax(220px, 1fr));
+      gap: 10px;
+      overflow: auto;
+    }
+    &__btn{
+      font-size: 14px;
+        height: 70px;
+        max-width: 300px;
+    }
+  }
+
+}
