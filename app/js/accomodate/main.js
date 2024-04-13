@@ -1,16 +1,12 @@
+const burger = document.querySelector(".burger");
+const popupMenu = document.querySelector(".popup-menu");
+const body = document.querySelector("body");
 
-const burger = document.querySelector('.burger');
-const popupMenu = document.querySelector('.popup-menu');
-const body = document.querySelector('body');
-
-burger.addEventListener('click', function() {
+burger.addEventListener("click", function () {
   burger.classList.toggle("active");
-  popupMenu.classList.toggle('active');
-  body.classList.toggle('no-scroll');
-})
-
-
-
+  popupMenu.classList.toggle("active");
+  body.classList.toggle("no-scroll");
+});
 
 const swiper = new Swiper(".slider", {
   loop: true,
@@ -66,30 +62,26 @@ if (document.querySelectorAll(".swiper-top")) {
 }
 
 // document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.querySelectorAll(".slider-items__item-slider");
-  wrapper.forEach((w) => {
-    const elems = w.querySelectorAll(".slider-items__thumb");
-    const prev = w.querySelector(".swiper-button-prev");
-    const next = w.querySelector(".swiper-button-next");
-    prev.addEventListener("click", checkCoordSlide(elems, 3, "prev"));
-    next.addEventListener("click", ()=>{
-      let count = 0;
-      checkCoordSlide(elems, 3, "next", count);
-    });
-    checkCoordSlide(elems, 3);
+const wrapper = document.querySelectorAll(".slider-items__item-slider");
+wrapper.forEach((w) => {
+  const elems = w.querySelectorAll(".slider-items__thumb");
+  const prev = w.querySelector(".swiper-button-prev");
+  const next = w.querySelector(".swiper-button-next");
+  prev.addEventListener("click", checkCoordSlide(elems, 3, "prev"));
+  next.addEventListener("click", () => {
+    let count = 0;
+    checkCoordSlide(elems, 3, "next", count);
   });
+  checkCoordSlide(elems, 3);
+});
 // });
 
 function checkCoordSlide(elems, index, value = "next") {
   let rest = elems.length - 4;
 
-
-  
-
   elems.forEach((elem) => {
-    console.log(elem.offsetLeft);
-    console.log(+elem.style.width.replace("px", "") + 8 + elem.offsetLeft);
-
+    // console.log(elem.offsetLeft);
+    // console.log(+elem.style.width.replace("px", "") + 8 + elem.offsetLeft);
 
     if (elem.querySelector(".num-photo"))
       elem.querySelector(".num-photo").remove();
@@ -282,26 +274,26 @@ if (phoneInputs && phoneInputs.length) {
 }
 // new mask
 
-if(document.querySelectorAll(".filters")){
+if (document.querySelectorAll(".filters")) {
   const filters = document.querySelectorAll(".filters");
-  
+
   filters.forEach((filter) => {
     const filterBtns = filter.querySelectorAll(".filters__btn");
     const filterItems = filter.querySelectorAll(".filters__item");
-  
+
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         filterBtns.forEach((btn) => btn.classList.remove("active"));
         btn.classList.add("active");
-  
+
         const dataFilter = e.currentTarget.dataset.filter;
-  
+
         filterItems.forEach(function (item) {
           if (dataFilter === "all") {
-            item.classList.remove('hidden');
+            item.classList.remove("hidden");
             return;
           }
-  
+
           if (item.classList.contains(dataFilter)) {
             item.classList.remove("hidden");
           } else {
@@ -312,3 +304,4 @@ if(document.querySelectorAll(".filters")){
     });
   });
 }
+

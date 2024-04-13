@@ -1,5 +1,12 @@
 .filters-city {
   padding-bottom: 100px;
+  position: relative;
+
+  &__img{
+    position: absolute;
+    right: 0;
+    top: -22%;
+  }
 
   &__title {
     @extend %jost-500;

@@ -1,0 +1,219 @@
+<!--=include header.html -->
+<main class="main" id="thankyou-page">
+  <section class="front-block">
+    <div class="container">
+      <div class="front-block__inner">
+        <div class="front-block__left">
+          <h1 class="front-block__title _main-title">
+            Все прошло успешно!
+          </h1>
+          <p class="front-block__subtitle">
+            Менеджеру салона <span>необходимо задать
+              вам несколько уточняющих вопросов</span>
+          </p>
+          <p class="front-block__text">
+            Пожалуйста, проверьте корректность
+            введенного вами номера телефона
+          </p>
+          <div class="front-block__bottom">
+            <p class="front-block__tel">
+              +7 (900) 000-00-00
+            </p>
+            <a class="front-block__btn _main-btn" href="#">
+              Нашел ошибку в номере,<br>
+              хочу ввести корректный
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="meeting">
+    <div class="container">
+      <h2 class="_title meeting__title">
+        Приглашаем вас на встречу в салон,<br>
+        <span>на которой вы сможете:</span>
+      </h2>
+      <!--=include meeting.html -->
+    </div>
+  </section>
+  <section class="visiting-time">
+    <div class="container">
+      <div class="visiting-time__inner">
+        <h2 class="_title visiting-time__title">
+          <span>Выберите удобное для<br>
+            вас</span>время посещения салона
+        </h2>
+        <form class="visiting-time__form" action="#">
+          <div class="visiting-time__item">
+            <p class="visiting-time__item-text">
+              Выберите день посещения:
+            </p>
+            <div class="visiting-time__inp-wrapper visiting-time__inp-wrapper--date">
+              <input class="visiting-time__item-inp" type="date" value="2023-12-15">
+            </div>
+          </div>
+          <div class="visiting-time__item">
+            <p class="visiting-time__item-text">
+              Выберите время посещения:
+            </p>
+            <div class="visiting-time__inp-wrapper">
+              <input class="visiting-time__item-inp" type="datetime" placeholder="16:00">
+            </div>
+          </div>
+          <button class="visiting-time__btn _main-btn" type="submit">
+            Записаться на посещение<br>
+            салона Любимая Кухня
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="urgent-question">
+    <div class="container">
+      <h2 class="_title urgent-question__title">
+        <span>Не хотите ждать или есть срочный вопрос?</span>
+      </h2>
+      <p class="urgent-question__subtitle">
+        Выберите салон и свяжитесь по указанному номеру
+      </p>
+    </div>
+    <!--=include filters-city.html -->
+    <div class="urgent-question__border"></div>
+  </section>
+  <section class="video">
+    <div class="container">
+      <div class="video__inner video-cards">
+        <h2 class="_title video__title video-cards__title">
+          Пока ждете звонка менеджера,<br>
+          <span>посмотрите лайфхаки и тренды</span> от экспертов<br>
+          салонов Любимая Кухня
+        </h2>
+        <div class="coursor visible-hand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+            <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+              fill="rgba(190,190,190,0.3)"></rect>
+            <path class="tooltip-horizontal-scroll-icon_hand"
+              d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+              fill="rgba(190,190,190,1)"></path>
+            <style>
+              .tooltip-horizontal-scroll-icon_hand {
+                animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+              }
+
+              .tooltip-horizontal-scroll-icon_card {
+                animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+              }
+
+              @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+                0% {
+                  transform: translateX(80px) scale(1);
+                  opacity: 0
+                }
+
+                10% {
+                  transform: translateX(80px) scale(1);
+                  opacity: 1
+                }
+
+                20%,
+                60% {
+                  transform: translateX(175px) scale(.6);
+                  opacity: 1
+                }
+
+                80% {
+                  transform: translateX(5px) scale(.6);
+                  opacity: 1
+                }
+
+                to {
+                  transform: translateX(5px) scale(.6);
+                  opacity: 0
+                }
+              }
+
+              @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+                0%,
+                60% {
+                  transform: translateX(0)
+                }
+
+                80%,
+                to {
+                  transform: translateX(-240px)
+                }
+              }
+            </style>
+          </svg>
+        </div>
+        <div class="video__items video-cards__items">
+
+          <div class="video__item video-cards__item">
+            <a class="video__item-wrapper video-cards__item-wrapper" href="https://www.youtube.com/watch?v=1A_9slmQx8M"
+              data-fancybox="video-1">
+              <img class="video__item-img video-cards__item-img" src="images/components/video-items/2/1.webp" alt="">
+              <div class="play">
+                <img class="video__item-play video-cards__item-play play__img" src="images/icons/play.svg" alt="play">
+              </div>
+            </a>
+            <h4 class="video__item-title video-cards__item-title">
+              Топ-5 ошибок при<br>
+              заказе кухни
+            </h4>
+          </div>
+          <div class="video__item video-cards__item">
+            <a class="video__item-wrapper video-cards__item-wrapper" href="https://www.youtube.com/watch?v=1A_9slmQx8M"
+              data-fancybox="video-1">
+              <img class="video__item-img video-cards__item-img" src="images/components/video-items/2/2.webp" alt="">
+              <div class="play">
+                <img class="video__item-play video-cards__item-play play__img" src="images/icons/play.svg" alt="play">
+              </div>
+            </a>
+            <h4 class="video__item-title video-cards__item-title">
+              Как спрятать огромный<br>
+              шкаф в прихожей?
+            </h4>
+          </div>
+          <div class="video__item video-cards__item">
+            <a class="video__item-wrapper video-cards__item-wrapper" href="https://www.youtube.com/watch?v=1A_9slmQx8M"
+              data-fancybox="video-1">
+              <img class="video__item-img video-cards__item-img" src="images/components/video-items/2/3.webp" alt="">
+              <div class="play">
+                <img class="video__item-play video-cards__item-play play__img" src="images/icons/play.svg" alt="play">
+              </div>
+            </a>
+            <h4 class="video__item-title video-cards__item-title">
+              Как сделать внешний<br>
+              вид кухни дороже?
+            </h4>
+          </div>
+          <div class="video__item video-cards__item">
+            <a class="video__item-wrapper video-cards__item-wrapper" href="https://www.youtube.com/watch?v=1A_9slmQx8M"
+              data-fancybox="video-1">
+              <img class="video__item-img video-cards__item-img" src="images/components/video-items/2/4.webp" alt="">
+              <div class="play">
+                <img class="video__item-play video-cards__item-play play__img" src="images/icons/play.svg" alt="play">
+              </div>
+            </a>
+            <h4 class="video__item-title video-cards__item-title">
+              Эргономика кухни
+            </h4>
+          </div>
+
+        </div>
+        <a class="video__btn video-cards__btn _main-btn" href="#">
+          <span>Открыть больше видео</span>
+          <img src="images/icons/window.svg" alt="window">
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!--=include footer.html -->

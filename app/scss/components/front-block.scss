@@ -2,9 +2,7 @@
   max-width: 1880px;
   margin: 0 auto 60px;
   background-image: url('../images/front-page/1.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @extend %bg;
   border-radius: 50px;
   padding: 20px 0;
 
