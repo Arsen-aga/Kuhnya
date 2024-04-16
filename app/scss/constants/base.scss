@@ -11,7 +11,7 @@ body {
 }
 
 @media (max-width: 991.8px) {
-  .main{
+  .main {
     margin-bottom: 40px;
   }
 }
@@ -50,29 +50,38 @@ body {
   @extend %jost-400;
   margin-bottom: 50px;
   text-align: center;
-  
+
   span {
     @extend %jost-500;
   }
 }
 
 @media (max-width: 1230px) {
-  ._title, ._title-light {
+
+  ._title,
+  ._title-light {
     font-size: 44px;
     margin-bottom: 30px;
   }
 }
-@media (max-width:  767.98px) {
-  ._title, ._title-light {
+
+@media (max-width: 767.98px) {
+
+  ._title,
+  ._title-light {
     font-size: 36px;
     margin-bottom: 25px;
   }
 }
-@media (max-width:  575.98px) {
-  ._title, ._title-light {
+
+@media (max-width: 575.98px) {
+
+  ._title,
+  ._title-light {
     font-size: 32px;
   }
 }
+
 ._main-btn {
   background-color: $primary;
   @extend %jost-700;
@@ -226,6 +235,36 @@ body {
 
     .tooltip-horizontal-scroll-icon_hand {
       fill: $primary;
+    }
+  }
+}
+
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  &__item{    
+    font-size: 16px;
+    line-height: calc(20/16*100%);
+  }
+
+  &__link {
+    @extend %jost-500;
+    color: $primary-2;
+  }
+
+  &__current{
+    color: #929292;
+    position: relative;
+    &::before{
+      content: '/';
+      position: absolute;
+      color: #929292;
+      left: -12px;
     }
   }
 }

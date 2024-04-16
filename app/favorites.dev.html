@@ -1,0 +1,501 @@
+<!--=include header.html -->
+
+<main class="main" id="featured-items-page">
+
+  <section class="featured-items">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current">Избранное</span>
+          </li>
+        </ul>
+      </div>
+      <h2 class="_title featured-items__title">
+        <span>Избранные позиции</span>
+      </h2>
+      <div class="coursor visible-hand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+          <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+            fill="rgba(190,190,190,0.3)"></rect>
+          <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+            fill="rgba(190,190,190,0.3)"></rect>
+          <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+            fill="rgba(190,190,190,0.3)"></rect>
+          <path class="tooltip-horizontal-scroll-icon_hand"
+            d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+            fill="rgba(190,190,190,1)"></path>
+          <style>
+            .tooltip-horizontal-scroll-icon_hand {
+              animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+            }
+
+            .tooltip-horizontal-scroll-icon_card {
+              animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+            }
+
+            @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+              0% {
+                transform: translateX(80px) scale(1);
+                opacity: 0
+              }
+
+              10% {
+                transform: translateX(80px) scale(1);
+                opacity: 1
+              }
+
+              20%,
+              60% {
+                transform: translateX(175px) scale(.6);
+                opacity: 1
+              }
+
+              80% {
+                transform: translateX(5px) scale(.6);
+                opacity: 1
+              }
+
+              to {
+                transform: translateX(5px) scale(.6);
+                opacity: 0
+              }
+            }
+
+            @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+              0%,
+              60% {
+                transform: translateX(0)
+              }
+
+              80%,
+              to {
+                transform: translateX(-240px)
+              }
+            }
+          </style>
+        </svg>
+      </div>
+      <div class="featured-items__items slider-items">
+
+        <div class="slider-items__item featured-items__item">
+          <div class="slider-items__item-slider">
+            <div class="swiper swiper-top slider-items__slider">
+              <div class="slider-items__top">
+                <button class="slider-items__top-like active">
+                  <img class="slider-items__top-img" src="images/icons/heart.svg" alt="heart">
+                  <img class="slider-items__top-img" src="images/icons/heart-red.svg" alt="heart">
+                </button>
+                <p class="slider-items__top-discount">Скидка %</p>
+              </div>
+              <div class="swiper-wrapper slider-items__slider-wrapper">
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/1.webp"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/1.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/2.webp"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/2.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/3.webp"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/3.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/4.webp"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/4.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/5.webp"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/5.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-6.jpg"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-7.jpg"
+                    data-fancybox="featured-items-slider-1">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next slider-items__arrows-next"></div>
+              <div class="swiper-button-prev slider-items__arrows-prev"></div>
+            </div>
+            <div class="swiper thumb-swiper slider-items__thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/1.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/2.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/3.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb add-num-photo">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/4.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/5.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-items__bottom featured-items__item-bottom">
+            <button class="slider-items__item-like active">
+              <img class="slider-items__item-img" src="images/icons/heart.svg" alt="heart">
+              <img class="slider-items__item-img" src="images/icons/heart-red.svg" alt="heart">
+            </button>
+            <div class="slider-items__item-info">
+              <p class="slider-items__item-top">Кухня на заказ</p>
+              <h4 class="slider-items__item-title">
+                Гранада
+              </h4>
+              <p class="slider-items__item-price">
+                <span>Цена:</span> от 210 000 ₽
+              </p>
+              <p class="slider-items__item-parameters">
+                <span>Фасады:</span> ЛДСП, Эмаль
+              </p>
+              <div class="slider-items__item-accordion">
+                <p class="slider-items__item-parameters slider-items__item-style">
+                  <span>Стиль:</span> Дизайнерские кухни, Матовые,
+                  Модерн, Современные кухни, Дизайнерские кухни, Матовые,
+                  Модерн, Современные кухни,
+                </p>
+                <button class="slider-items__item-more"><span>Открыть</span> весь список стилей</button>
+              </div>
+            </div>
+            <div class="slider-items__item-btns">
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Быстрый<br>
+                заказ
+              </a>
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Рассчитать
+                стоимость
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items__item featured-items__item">
+          <div class="slider-items__item-slider">
+            <div class="swiper swiper-top slider-items__slider">
+              <div class="slider-items__top">
+                <button class="slider-items__top-like">
+                  <img class="slider-items__top-img" src="images/icons/heart.svg" alt="heart">
+                  <img class="slider-items__top-img" src="images/icons/heart-red.svg" alt="heart">
+                </button>
+                <p class="slider-items__top-discount">Скидка %</p>
+              </div>
+              <div class="swiper-wrapper slider-items__slider-wrapper">
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/1.webp"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/1.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/2.webp"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/2.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/3.webp"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/3.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/4.webp"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/4.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/5.webp"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/5.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-6.jpg"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-7.jpg"
+                    data-fancybox="featured-items-slider-2">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next slider-items__arrows-next"></div>
+              <div class="swiper-button-prev slider-items__arrows-prev"></div>
+            </div>
+            <div class="swiper thumb-swiper slider-items__thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/1.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/2.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/3.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb add-num-photo">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/4.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/5.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-items__bottom featured-items__item-bottom">
+            <button class="slider-items__item-like">
+              <img class="slider-items__item-img" src="images/icons/heart.svg" alt="heart">
+              <img class="slider-items__item-img" src="images/icons/heart-red.svg" alt="heart">
+            </button>
+            <div class="slider-items__item-info">
+              <p class="slider-items__item-top">Кухня на заказ</p>
+              <h4 class="slider-items__item-title">
+                Гранада
+              </h4>
+              <p class="slider-items__item-price">
+                <span>Цена:</span> от 210 000 ₽
+              </p>
+              <p class="slider-items__item-parameters">
+                <span>Фасады:</span> ЛДСП, Эмаль
+              </p>
+              <div class="slider-items__item-accordion">
+                <p class="slider-items__item-parameters slider-items__item-style">
+                  <span>Стиль:</span> Дизайнерские кухни, Матовые,
+                  Модерн, Современные кухни,
+                </p>
+                <button class="slider-items__item-more"><span>Открыть</span> весь список стилей</button>
+              </div>
+            </div>
+            <div class="slider-items__item-btns">
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Быстрый<br>
+                заказ
+              </a>
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Рассчитать
+                стоимость
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-items__item featured-items__item">
+          <div class="slider-items__item-slider">
+            <div class="swiper swiper-top slider-items__slider">
+              <div class="slider-items__top">
+                <button class="slider-items__top-like">
+                  <img class="slider-items__top-img" src="images/icons/heart.svg" alt="heart">
+                  <img class="slider-items__top-img" src="images/icons/heart-red.svg" alt="heart">
+                </button>
+                <p class="slider-items__top-discount">Скидка %</p>
+              </div>
+              <div class="swiper-wrapper slider-items__slider-wrapper">
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/1.webp"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/1.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/2.webp"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/2.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/3.webp"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/3.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/4.webp"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/4.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="images/components/slider-items/2/5.webp"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="images/components/slider-items/2/5.webp" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-6.jpg"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide slider-items__slider-slide">
+                  <a class="slider-items__slider-link" href="https://swiperjs.com/demos/images/nature-7.jpg"
+                    data-fancybox="featured-items-slider-3">
+                    <img class="slider-items__slider-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next slider-items__arrows-next"></div>
+              <div class="swiper-button-prev slider-items__arrows-prev"></div>
+            </div>
+            <div class="swiper thumb-swiper slider-items__thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/1.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/2.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/3.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb add-num-photo">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/4.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="images/components/slider-items/2/5.webp" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide slider-items__thumb">
+                  <img class="slider-items__thumb-img" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-items__bottom featured-items__item-bottom">
+            <button class="slider-items__item-like">
+              <img class="slider-items__item-img" src="images/icons/heart.svg" alt="heart">
+              <img class="slider-items__item-img" src="images/icons/heart-red.svg" alt="heart">
+            </button>
+            <div class="slider-items__item-info">
+              <p class="slider-items__item-top">Кухня на заказ</p>
+              <h4 class="slider-items__item-title">
+                Гранада
+              </h4>
+              <p class="slider-items__item-price">
+                <span>Цена:</span> от 210 000 ₽
+              </p>
+              <p class="slider-items__item-parameters">
+                <span>Фасады:</span> ЛДСП, Эмаль
+              </p>
+              <div class="slider-items__item-accordion">
+                <p class="slider-items__item-parameters slider-items__item-style">
+                  <span>Стиль:</span> Дизайнерские кухни, Матовые,
+                  Модерн, Современные кухни,
+                </p>
+                <button class="slider-items__item-more"><span>Открыть</span> весь список стилей</button>
+              </div>
+            </div>
+            <div class="slider-items__item-btns">
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Быстрый<br>
+                заказ
+              </a>
+              <a class="slider-items__item-btn _main-btn" href="#">
+                Рассчитать
+                стоимость
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="your-selection">
+    <div class="container">
+      <div class="your-selection__inner">
+        <form class="your-selection__form" action="#">
+          <h3 class="your-selection__title">
+            Отправьте вашу подборку
+            избранного дизайнеру
+          </h3>
+          <p class="your-selection__text">
+            и мы учтем понравившиеся позиции
+            при разработке вашего дизайн-проекта
+          </p>
+          <p class="your-selection__form-title">
+            Выберите способ связи:
+          </p>
+          <div class="your-selection__form-socials">
+            <input class="your-selection__form-inp" type="radio" name="social" id="call" value="call">
+            <label for="call" class="your-selection__form-label _light-btn">
+              <span>Звонок</span>
+              <img src="images/icons/phone-white.svg" alt="">
+            </label>
+            <input class="your-selection__form-inp" type="radio" name="social" id="whatsapp" value="whatsapp">
+            <label for="whatsapp" class="your-selection__form-label _light-btn">
+              <span>WhatsApp</span>
+              <img src="images/icons/whatsapp.svg" alt="">
+            </label>
+            <input class="your-selection__form-inp" type="radio" name="social" id="telegram" value="telegram">
+            <label for="telegram" class="your-selection__form-label _light-btn">
+              <span>Telegram</span>
+              <img src="images/icons/tg.svg" alt="">
+            </label>
+          </div>
+          <input class="your-selection__form-tel" type="tel" placeholder="+7 (900) 000-00-00">
+          <button class="your-selection__form-btn _main-btn" type="submit">
+            Отправить подборку избранного
+          </button>
+          <label class="your-selection__form-checkbox">
+            <input type="checkbox">
+            <span></span>
+            <p>
+              Я принимаю условия <a href="#">политики конфиденциальности</a>
+            </p>
+          </label>
+        </form>
+        <div class="your-selection__img-wrapper">
+          <img class="your-selection__img" src="images/one/1.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!--=include footer.html -->
