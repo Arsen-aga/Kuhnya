@@ -14,6 +14,7 @@
 @import './components/filters-city.scss';
 @import './components/thankyou-page.scss';
 @import './components/featured-items-page.scss';
+@import './components/portfolio-page.scss';
 
 
 
@@ -89,6 +90,7 @@
     color: white;
     font-size: 16px;
     line-height: calc(20/16*100%);
+    display: block;
   }
 
 }
@@ -494,6 +496,7 @@
 @media (max-width: 575.98px) {
   .footer-top {
     padding: 40px 0;
+    border-radius: 30px;
 
     &__item {
       width: 50%;
@@ -650,6 +653,7 @@
     color: $default-4;
     height: 60px;
     margin-bottom: 10px;
+    box-shadow: none;
 
     &::before {
       -webkit-mask-image: url('../images/icons/arrow-top.svg');
@@ -680,6 +684,12 @@
   .video {
     margin: 40px auto;
     padding: 40px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .video {
+    border-radius: 30px;
   }
 }
 
@@ -860,6 +870,8 @@
     line-height: calc(30/22*100%);
     color: $default-4;
     margin-bottom: 20px;
+    width: 100%;
+    @extend %jost-400;
   }
 
   &__form-btn {
@@ -933,6 +945,8 @@
 
 @media (max-width: 575.98px) {
   .best-ideas {
+    border-radius: 30px;
+
     &__left-title {
       font-size: 24px;
       margin-bottom: 5px;
@@ -1344,6 +1358,8 @@
 
 @media (max-width: 575.98px) {
   .kitchen-media {
+    border-radius: 30px;
+
     &__left-title {
       font-size: 32px;
     }
@@ -1353,5 +1369,3 @@
     }
   }
 }
-
-

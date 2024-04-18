@@ -2,10 +2,23 @@
   padding-bottom: 100px;
   position: relative;
 
-  &__img{
+  &__img {
     position: absolute;
     right: 0;
     top: -22%;
+  }
+
+  .filters-select__select {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .filters-select__select-list {
+    min-width: auto;
+    padding: 10px;
+    padding-right: 30px;
+    right: 0;
+    left: auto;
   }
 
   &__title {
@@ -19,6 +32,11 @@
       text-decoration-line: underline;
       color: $primary;
       position: relative;
+      font-size: 36px;
+      padding: 0;
+      line-height: calc(44/36*100%);
+      border: none;
+      border-radius: 0;
 
       &::after {
         content: '';
@@ -69,6 +87,7 @@
       max-width: 100%;
       border-radius: 20px;
       background-color: $primary-2;
+      box-shadow: 0px 15px 40px rgba(219, 162, 80, 0.15);
     }
   }
 
@@ -169,7 +188,6 @@
     margin-bottom: 40px;
 
     a {
-
       font-size: 20px;
       line-height: calc(28/20*100%);
       text-decoration-line: underline;
@@ -189,7 +207,9 @@
     gap: 10px;
     background-color: $bg-green;
     margin-bottom: 20px;
+    box-shadow: 0px 20px 40px rgba(37, 211, 102, 0.1);
   }
+
 
   &__inner-btn {
     height: 96px;
@@ -313,20 +333,25 @@
 }
 
 @media (max-width: 575.98px) {
-  .filters-city{
+  .filters-city {
     padding-bottom: 0;
 
-    &__title{
+    &__title {
       font-size: 28px;
+      a{
+        font-size: 28px;
+      }
     }
   }
+
   .content-item {
     &__previews {
       overflow: auto;
       padding-bottom: 15px;
       grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
-    &__inner-btn{
+
+    &__inner-btn {
       font-size: 12px;
     }
   }

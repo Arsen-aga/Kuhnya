@@ -53,6 +53,7 @@
     &:last-child {
       background-color: $primary-2;
       max-width: 320px;
+  box-shadow: 0px 15px 40px rgba(219, 162, 80, 0.15);
 
       &::before {
         background-image: url('../images/icons/signs.svg');
@@ -103,6 +104,7 @@
 @media (max-width: 991.8px) {
   .front-block {
     margin-bottom: 30px;
+
     &__title {
       font-size: 36px;
       margin-bottom: 5px;
@@ -121,29 +123,37 @@
 }
 
 @media (max-width: 767.98px) {
-    .front-block {
-      padding: 50px 0;
+  .front-block {
+    padding: 50px 0;
 
-      &__inner{
-        justify-content: center;
-        gap: 0;
-      }
-    
-        &__right-wrapper {
-          display: none;
-        }
-      }
+    &__inner {
+      justify-content: center;
+      gap: 0;
+    }
+
+    &__right-wrapper {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .front-block {
+    border-radius: 30px;
+  }
+
 }
 
 @media (max-width: 468px) {
-    .front-block {
-        &__title {
-          font-size: 30px;
-          margin-bottom: 5px;
-        }
-                .front-block__btn {
-                  padding: 15px 20px;
-                  font-size: 14px;
-                }
-      }
+  .front-block {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .front-block__btn {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+  }
 }

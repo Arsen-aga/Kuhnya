@@ -49,22 +49,24 @@ function pages() {
 }
 
 function styles() {
-  return src([
-    "node_modules/swiper/swiper-bundle.min.css",
-    "node_modules/@fancyapps/ui/dist/fancybox/fancybox.scss",
-    "app/scss/*.scss", 
-  ])
-    .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
-    .pipe(concat('style.min.css'))
-    // .pipe(
-    //   rename({
-    //     suffix: ".min",
-    //     extname: ".css",
-    //   })
-    // )
-    .pipe(scss({ outputStyle: "compressed" }))
-    .pipe(dest("app/css"))
-    .pipe(browserSync.stream());
+  return (
+    src([
+      "node_modules/swiper/swiper-bundle.min.css",
+      "node_modules/@fancyapps/ui/dist/fancybox/fancybox.scss",
+      "app/scss/*.scss",
+    ])
+      .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
+      // .pipe(
+      //   rename({
+      //     suffix: ".min",
+      //     extname: ".css",
+      //   })
+      // )
+      .pipe(scss())
+      .pipe(concat("style.min.css"))
+      .pipe(dest("app/css"))
+      .pipe(browserSync.stream())
+  );
 }
 
 function scripts() {

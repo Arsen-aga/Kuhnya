@@ -44,13 +44,15 @@
           <span>Выберите удобное для<br>
             вас</span>время посещения салона
         </h2>
-        <form class="visiting-time__form" action="#">
+        <form class="visiting-time__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="from" value="Записаться на посещение">
+          <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
           <div class="visiting-time__item">
             <p class="visiting-time__item-text">
               Выберите день посещения:
             </p>
             <div class="visiting-time__inp-wrapper visiting-time__inp-wrapper--date">
-              <input class="visiting-time__item-inp" type="date" value="2023-12-15">
+              <input class="visiting-time__item-inp" type="date" name="date" value="2023-12-15">
             </div>
           </div>
           <div class="visiting-time__item">
@@ -58,7 +60,7 @@
               Выберите время посещения:
             </p>
             <div class="visiting-time__inp-wrapper">
-              <input class="visiting-time__item-inp" type="datetime" placeholder="16:00">
+              <input class="visiting-time__item-inp" type="datetime" name="time" placeholder="16:00">
             </div>
           </div>
           <button class="visiting-time__btn _main-btn" type="submit">

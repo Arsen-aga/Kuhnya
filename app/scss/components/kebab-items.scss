@@ -56,7 +56,7 @@
   &__center {
     position: relative;
     border-radius: 30px;
-    min-height: 380px;
+    padding-bottom: 128%;
     margin-bottom: 20px;
   }
 
@@ -133,7 +133,7 @@
     }
 
     &__center {
-      min-height: 250px;
+      padding-bottom: 84%;
     }
 
     &__top-text {
