@@ -145,7 +145,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
@@ -176,7 +176,8 @@ body {
   .container {
     max-width: 100%;
   }
-  br{
+
+  br {
     display: none;
   }
 }
@@ -248,13 +249,30 @@ body {
 .breadcrumbs {
   &__list {
     display: flex;
-    gap: 18px;
+    row-gap: 5px;
     flex-wrap: wrap;
   }
 
-  &__item{    
+  &__item {
     font-size: 16px;
     line-height: calc(20/16*100%);
+    padding-left: 18px;
+    position: relative;
+
+    &::before {
+      content: '/';
+      position: absolute;
+      color: #929292;
+      left: 5px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
   &__link {
@@ -262,14 +280,7 @@ body {
     color: $primary-2;
   }
 
-  &__current{
+  &__current {
     color: #929292;
-    position: relative;
-    &::before{
-      content: '/';
-      position: absolute;
-      color: #929292;
-      left: -12px;
-    }
   }
 }

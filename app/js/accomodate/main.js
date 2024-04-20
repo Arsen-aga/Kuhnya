@@ -8,7 +8,7 @@ burger.addEventListener("click", function () {
   body.classList.toggle("no-scroll");
 });
 
-const swiper = new Swiper(".slider", {
+const swiper = new Swiper(".slider-block__inner", {
   loop: true,
   slidesPerView: 2,
   spaceBetween: 12,
@@ -49,30 +49,32 @@ function getSliderItem(swiperTop, thumbSwiper, thumbSpace) {
   });
 }
 
-if (document.querySelectorAll(".swiper-top")) {
+if (document.querySelectorAll(".slider")) {
+  const sliders = document.querySelectorAll(".slider");
   const swiperTop = document.querySelectorAll(".swiper-top");
   const thumbSwiper = document.querySelectorAll(".thumb-swiper");
   const mainSlidersSpace = 8;
 
-  if (swiperTop.length === 1) {
-    getSliderItem(swiperTop, thumbSwiper, mainSlidersSpace);
-  }
-  for (let i = 0; i < swiperTop.length; i++) {
-    getSliderItem(swiperTop[i], thumbSwiper[i], mainSlidersSpace);
+  if (sliders.length === 1) {
+    getSliderItem(swiperTop[0], thumbSwiper[0], mainSlidersSpace);
+  } else {
+    for (let i = 0; i < sliders.length; i++) {
+      getSliderItem(swiperTop[i], thumbSwiper[i], mainSlidersSpace);
+    }
   }
 
   const swiperTopPortfolio = document.querySelectorAll(
-    "#portfolio-page .swiper-top"
+    "#portfolio-page .swiper-top, #case-page .swiper-top"
   );
   const thumbSwiperPortfolio = document.querySelectorAll(
-    "#portfolio-page .thumb-swiper"
+    "#portfolio-page .thumb-swiper, #case-page .thumb-swiper"
   );
   const swiperPortfolioSpace = 18;
 
   if (swiperTopPortfolio.length === 1) {
     getSliderItem(
-      swiperTopPortfolio,
-      thumbSwiperPortfolio,
+      swiperTopPortfolio[0],
+      thumbSwiperPortfolio[0],
       swiperPortfolioSpace
     );
   }
