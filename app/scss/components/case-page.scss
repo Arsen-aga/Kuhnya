@@ -91,6 +91,8 @@
 @media (max-width: 991.8px) {
   .case-reviews {
     &__inner {
+      padding-top: 40px;
+      margin-bottom: 40px;
       flex-wrap: wrap-reverse;
       justify-content: center;
     }
@@ -112,8 +114,6 @@
 @media (max-width: 767.98px) {
   .case-reviews {
     &__inner {
-      padding-top: 40px;
-      margin-bottom: 40px;
       gap: 20px;
     }
 
@@ -227,18 +227,14 @@
 
 @media (max-width: 991.8px) {
   .project-details {
+    margin-bottom: 40px;
+
     &__items {
       grid-template-columns: repeat(6, minmax(320px, 1fr));
       gap: 10px;
       overflow: auto;
       padding-bottom: 15px;
     }
-  }
-}
-
-@media (max-width: 767.98px) {
-  .project-details {
-    margin-bottom: 40px;
   }
 }
 
@@ -370,6 +366,7 @@
     &__item {
       flex-wrap: wrap;
       gap: 20px;
+      padding: 40px;
     }
 
     &__item-left {
@@ -393,12 +390,10 @@
 @media (max-width: 767.98px) {
   .next-project {
     &__inner {
-
       border-radius: 30px;
     }
 
     &__item {
-      padding: 40px;
       gap: 10px;
     }
 
@@ -431,7 +426,7 @@
       margin-bottom: 0px;
     }
 
-    &__item-list{
+    &__item-list {
       margin-bottom: 10px;
     }
   }

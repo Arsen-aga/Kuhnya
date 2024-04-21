@@ -1,0 +1,214 @@
+<div class="profitable-offer__filters filters">
+  <div class="profitable-offer__filters filters-action">
+    <button class="filters-action__btn _light-btn filters__btn active" data-filter="all">
+      Все акции
+    </button>
+    <button class="filters-action__btn _light-btn filters__btn" data-filter="kitchen">
+      Скидки на кухни
+    </button>
+    <button class="filters-action__btn _light-btn filters__btn" data-filter="furniture">
+      Скидки на мебель
+    </button>
+    <button class="filters-action__btn _light-btn filters__btn" data-filter="technique">
+      Скидки на технику
+    </button>
+  </div>
+  <div class="coursor visible-hand">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+      <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+        fill="rgba(190,190,190,0.3)"></rect>
+      <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+        fill="rgba(190,190,190,0.3)"></rect>
+      <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+        fill="rgba(190,190,190,0.3)"></rect>
+      <path class="tooltip-horizontal-scroll-icon_hand"
+        d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+        fill="rgba(190,190,190,1)"></path>
+      <style>
+        .tooltip-horizontal-scroll-icon_hand {
+          animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+        }
+
+        .tooltip-horizontal-scroll-icon_card {
+          animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+        }
+
+        @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+          0% {
+            transform: translateX(80px) scale(1);
+            opacity: 0
+          }
+
+          10% {
+            transform: translateX(80px) scale(1);
+            opacity: 1
+          }
+
+          20%,
+          60% {
+            transform: translateX(175px) scale(.6);
+            opacity: 1
+          }
+
+          80% {
+            transform: translateX(5px) scale(.6);
+            opacity: 1
+          }
+
+          to {
+            transform: translateX(5px) scale(.6);
+            opacity: 0
+          }
+        }
+
+        @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+          0%,
+          60% {
+            transform: translateX(0)
+          }
+
+          80%,
+          to {
+            transform: translateX(-240px)
+          }
+        }
+      </style>
+    </svg>
+  </div>
+  <div class="profitable-offer__items kebab-items">
+    <div class="kebab-items__item filters__item kitchen">
+      <div class="kebab-items__top">
+        <h4 class="kebab-items__top-title">
+          Акция месяца –
+          «Название акции»
+        </h4>
+        <p class="kebab-items__top-text">
+          Краткое описание акции месяца
+        </p>
+        <a class="kebab-items__top-link _main-btn" href="#">
+          Срок акции: до 31 января
+        </a>
+      </div>
+      <a class="kebab-items__center" href="https://m.youtube.com/watch?v=zuPeJ2tERwU" data-fancybox="">
+        <img class="kebab-items__center-img" src="images/components/kebab-items/1/1.webp" alt="">
+        <div class="play">
+          <img class="play__img" src="images/icons/play.svg" alt="play">
+        </div>
+        <div class="disconunt-block">
+          <p class="disconunt-block__text">
+
+          </p>
+          <img class="disconunt-block__img" src="images/icons/polygon.svg" alt="">
+        </div>
+      </a>
+      <div class="kebab-items__bottom">
+        <a class="kebab-items__bottom-about _light-btn" href="#">
+          Узнать об акции подробнее
+        </a>
+        <a class="kebab-items__bottom-consult _main-btn" href="#">
+          Получить консультацию<br>
+          по данной акции
+        </a>
+      </div>
+    </div>
+    <div class="kebab-items__item filters__item kebab-items__item--discount furniture">
+      <div class="kebab-items__top">
+        <h4 class="kebab-items__top-title">
+          Скидка 67%<br>
+          на шкаф НОВА
+        </h4>
+        <p class="kebab-items__top-text">
+          <span>Старая цена:</span> 278 277 руб.
+        </p>
+        <p class="kebab-items__top-text">
+          <span>Новая цена:</span> 120 000 руб.
+        </p>
+        <a class="kebab-items__top-link _main-btn" href="#">
+          Срок акции: до 31 января
+        </a>
+      </div>
+      <a class="kebab-items__center" href="https://m.youtube.com/watch?v=zuPeJ2tERwU" data-fancybox="">
+        <img class="kebab-items__center-img" src="images/components/kebab-items/1/2.webp" alt="">
+        <div class="play">
+          <img class="play__img" src="images/icons/play.svg" alt="play">
+        </div>
+        <div class="disconunt-block">
+          <p class="disconunt-block__text">
+            -67%
+          </p>
+          <img class="disconunt-block__img" src="images/icons/polygon.svg" alt="">
+        </div>
+      </a>
+      <div class="kebab-items__bottom">
+        <a class="kebab-items__bottom-about _light-btn" href="#">
+          Узнать об акции подробнее
+        </a>
+        <a class="kebab-items__bottom-consult _main-btn" href="#">
+          Получить консультацию<br>
+          по данной акции
+        </a>
+      </div>
+    </div>
+    <div class="kebab-items__item filters__item kebab-items__item--discount technique">
+      <div class="kebab-items__top">
+        <h4 class="kebab-items__top-title">
+          25% кухни<br>
+          в подарок
+        </h4>
+        <p class="kebab-items__top-text">
+          Уточняйте подробности акции<br>
+          у дизайнеров в салонах
+        </p>
+        <a class="kebab-items__top-link _main-btn" href="#">
+          Срок акции: до 31 января
+        </a>
+      </div>
+      <a class="kebab-items__center" href="https://m.youtube.com/watch?v=zuPeJ2tERwU" data-fancybox="">
+        <img class="kebab-items__center-img" src="images/components/kebab-items/1/3.webp" alt="">
+        <div class="play">
+          <img class="play__img" src="images/icons/play.svg" alt="play">
+        </div>
+        <div class="disconunt-block">
+          <p class="disconunt-block__text">
+            -25%
+          </p>
+          <img class="disconunt-block__img" src="images/icons/polygon.svg" alt="">
+        </div>
+      </a>
+      <div class="kebab-items__bottom">
+        <a class="kebab-items__bottom-about _light-btn" href="#">
+          Узнать об акции подробнее
+        </a>
+        <a class="kebab-items__bottom-consult _main-btn" href="#">
+          Получить консультацию<br>
+          по данной акции
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="profitable-offer__btn _light-btn" href="#">
+  <span>Открыть больше акций</span>
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.4" clip-path="url(#clip0_148_1020)">
+      <path
+        d="M0 2.18828C0.124103 1.85546 0.203077 1.50008 0.377949 1.2011C0.829231 0.439566 1.53436 0.0277714 2.42 0.0164894C4.10667 -0.00607472 5.79333 -0.000433694 7.48 0.0108484C8.81128 0.0221304 9.88872 1.10521 9.90564 2.43649C9.92256 4.11187 9.92256 5.78726 9.90564 7.46264C9.89436 8.79957 8.80564 9.877 7.46308 9.88828C5.79897 9.90521 4.13487 9.89957 2.47077 9.88828C1.24667 9.877 0.253846 9.01393 0.0451282 7.80675C0.0282051 7.77854 0.0112821 7.75034 0 7.71649C0 5.87187 0 4.02726 0 2.18828ZM4.95282 8.21854C5.73128 8.21854 6.5041 8.21854 7.28256 8.21854C7.91436 8.21854 8.22462 7.90828 8.22462 7.28213C8.22462 5.72521 8.22462 4.16828 8.22462 2.61136C8.22462 1.99649 7.90872 1.68059 7.29949 1.68059C5.73128 1.68059 4.16872 1.68059 2.60051 1.68059C1.99692 1.68059 1.67538 1.99649 1.67538 2.59444C1.67538 4.16264 1.67538 5.73649 1.67538 7.3047C1.67538 7.897 1.99692 8.2129 2.60051 8.21854C3.38462 8.21854 4.16872 8.21854 4.95282 8.21854Z"
+        fill="#464451" />
+      <path
+        d="M0 13.7472C0.124103 13.4088 0.203077 13.0477 0.389231 12.7431C0.846154 11.9929 1.54564 11.5867 2.42 11.5754C4.10667 11.5529 5.78769 11.5585 7.47436 11.5754C8.80564 11.5867 9.88872 12.6698 9.9 13.9954C9.91692 15.6708 9.91692 17.3462 9.9 19.0216C9.88872 20.2288 9.01436 21.2159 7.81846 21.4247C7.78461 21.4247 7.75641 21.4472 7.72256 21.4585H2.18308C2.14923 21.4472 2.12103 21.4303 2.08718 21.4247C1.31436 21.2949 0.722051 20.8944 0.344103 20.2175C0.186154 19.9298 0.112821 19.597 0 19.2867C0 17.4421 0 15.5975 0 13.7585L0 13.7472ZM8.23026 16.5113C8.23026 15.7385 8.23026 14.96 8.23026 14.1872C8.23026 13.5554 7.92 13.2452 7.29385 13.2452C5.73692 13.2452 4.17436 13.2452 2.61744 13.2452C2.00256 13.2452 1.68103 13.5554 1.68103 14.1703C1.68103 15.7329 1.68103 17.2954 1.68103 18.858C1.68103 19.4616 1.99692 19.7775 2.59487 19.7775C4.16872 19.7775 5.74256 19.7775 7.31641 19.7775C7.91436 19.7775 8.23026 19.4559 8.23026 18.8524C8.23026 18.0682 8.23026 17.2898 8.23026 16.5057V16.5113Z"
+        fill="#464451" />
+      <path
+        d="M21.4931 7.67735C21.3972 8.11735 21.2675 8.54042 20.9798 8.90145C20.489 9.52196 19.8459 9.88299 19.0562 9.89427C17.3751 9.91119 15.6998 9.91683 14.0187 9.89427C12.71 9.87735 11.61 8.78863 11.5931 7.47991C11.5705 5.79889 11.5705 4.11222 11.5931 2.43119C11.61 1.12248 12.71 0.0337587 14.0187 0.0168356C15.6998 -0.00572849 17.3751 -8.74638e-05 19.0562 0.0168356C20.2408 0.0281177 21.2449 0.9194 21.4536 2.09273C21.4592 2.13786 21.4818 2.18299 21.4931 2.23376V7.67735ZM19.8121 4.96402C19.8121 4.17427 19.8121 3.38453 19.8121 2.59478C19.8121 2.02504 19.468 1.68658 18.8926 1.68658C17.3244 1.68658 15.7562 1.68658 14.1936 1.68658C13.6069 1.68658 13.2685 2.02504 13.2685 2.61171C13.2685 4.17427 13.2685 5.73684 13.2685 7.30504C13.2685 7.88607 13.6126 8.22453 14.1992 8.22453C15.7618 8.22453 17.3187 8.22453 18.8813 8.22453C19.4792 8.22453 19.8177 7.88607 19.8177 7.29376C19.8177 6.52094 19.8177 5.74248 19.8177 4.96966L19.8121 4.96402Z"
+        fill="#464451" />
+      <path
+        d="M13.8099 21.4587C13.3643 21.3628 12.9356 21.2274 12.5689 20.9341C11.954 20.4433 11.5986 19.8115 11.593 19.0274C11.5761 17.3521 11.5704 15.6767 11.593 14.0069C11.6099 12.6869 12.7043 11.5982 14.0243 11.5813C15.6997 11.5587 17.3807 11.5644 19.0561 11.5813C20.2407 11.5926 21.2448 12.4839 21.4535 13.6572C21.4592 13.7023 21.4817 13.7474 21.493 13.7982V19.2474C21.4817 19.2926 21.4648 19.3377 21.4535 19.3828C21.2504 20.37 20.6638 21.03 19.7104 21.3515C19.5694 21.4023 19.4171 21.4249 19.2704 21.4644H13.8156L13.8099 21.4587ZM13.2628 16.5115C13.2628 17.2956 13.2628 18.0741 13.2628 18.8582C13.2628 19.4449 13.6012 19.7833 14.1879 19.7833C15.7561 19.7833 17.3243 19.7833 18.8869 19.7833C19.4679 19.7833 19.812 19.4392 19.812 18.8582C19.812 17.3013 19.812 15.7444 19.812 14.1874C19.812 13.5895 19.4735 13.251 18.8756 13.251C17.313 13.251 15.7561 13.251 14.1935 13.251C13.5956 13.251 13.2628 13.5895 13.2571 14.1874C13.2571 14.9603 13.2571 15.7387 13.2571 16.5115H13.2628Z"
+        fill="#464451" />
+    </g>
+    <defs>
+      <clipPath id="clip0_148_1020">
+        <rect width="22" height="22" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+</a>

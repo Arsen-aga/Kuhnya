@@ -1,0 +1,121 @@
+<!--=include header.html -->
+<main class="main" id="action-page">
+
+  <section class="front-block">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/kuhni/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current">Акции</span>
+          </li>
+        </ul>
+      </div>
+      <div class="front-block__inner">
+        <div class="front-block__left">
+          <h1 class="front-block__title _main-title">
+            Воспользуйтесь
+            выгодными
+            предложениями
+            нашей фабрики
+          </h1>
+          <img class="front-block__img" src="images/front-page/items/action-card.webp" alt="">
+          <div class="front-block__btns">
+            <a class="front-block__btn _main-btn" href="#">
+              Получить сертификат – скидку
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="action-block">
+    <div class="container">
+      <!--=include kebab-block.html -->
+    </div>
+  </section>
+  <section class="no-time">
+    <div class="container">
+      <div class="no-time__inner">
+        <form class="no-time__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="from" value="Получить подборку акций">
+          <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+          <h3 class="no-time__title">
+            Нет времени искать
+            подходящую акцию?
+          </h3>
+          <p class="no-time__text">
+            Менеджер сделает это за вас
+          </p>
+          <div class="no-time__item">
+            <p class="no-time__item-title">
+              1. Выберите интересующую категорию акций
+            </p>
+            <div class="no-time__item-collection">
+              <input class="no-time__item-inp" type="radio" name="collection_interest" id="all" value="all">
+              <label for="all" class="no-time__collection-label _light-btn">
+                Все акции
+              </label>
+              <input class="no-time__item-inp" type="radio" name="collection_interest" id="kichen" value="kichen">
+              <label for="kichen" class="no-time__collection-label _light-btn">
+                Скидки на кухни
+              </label>
+              <input class="no-time__item-inp" type="radio" name="collection_interest" id="furniture" value="furniture">
+              <label for="furniture" class="no-time__collection-label _light-btn">
+                Скидки на мебель
+              </label>
+              <input class="no-time__item-inp" type="radio" name="collection_interest" id="technique" value="technique">
+              <label for="technique" class="no-time__collection-label _light-btn">
+                Скидки на технику
+              </label>
+            </div>
+          </div>
+          <div class="no-time__item">
+            <p class="no-time__item-title">
+              2. Где вам удобно получить подборку акций?
+            </p>
+            <div class="no-time__item-socials">
+              <input class="no-time__item-inp" type="radio" name="social" id="call" value="call">
+              <label for="call" class="no-time__item-label _light-btn">
+                <span>Звонок</span>
+                <img src="images/icons/phone-white.svg" alt="">
+              </label>
+              <input class="no-time__item-inp" type="radio" name="social" id="whatsapp" value="whatsapp">
+              <label for="whatsapp" class="no-time__item-label _light-btn">
+                <span>WhatsApp</span>
+                <img src="images/icons/whatsapp.svg" alt="">
+              </label>
+              <input class="no-time__item-inp" type="radio" name="social" id="telegram" value="telegram">
+              <label for="telegram" class="no-time__item-label _light-btn">
+                <span>Telegram</span>
+                <img src="images/icons/tg.svg" alt="">
+              </label>
+            </div>
+          </div>
+          <div class="no-time__item">
+            <p class="no-time__item-title">
+              3. Введите номер телефона
+            </p>
+            <input class="no-time__item-tel" type="tel" placeholder="+7 (900) 000-00-00" required>
+          </div>
+          <button class="no-time__item-btn _main-btn" type="submit">
+            Получить подборку акций
+          </button>
+          <label class="no-time__item-checkbox">
+            <input type="checkbox" required>
+            <span></span>
+            <p>
+              Я принимаю условия <a href="#">политики конфиденциальности</a>
+            </p>
+          </label>
+        </form>
+        <div class="no-time__img-wrapper">
+          <img class="no-time__img" src="images/one/3.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html -->
