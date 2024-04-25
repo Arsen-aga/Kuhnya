@@ -311,6 +311,8 @@ if (document.querySelectorAll(".filters")) {
     const filterItems = filter.querySelectorAll(".filters__item");
     const filterPrev = filter.querySelector(".filters__prev");
     const filterNext = filter.querySelector(".filters__next");
+    
+    // console.log(filterItems);
 
     let count = 0;
 
@@ -325,6 +327,7 @@ if (document.querySelectorAll(".filters")) {
         btn.classList.add("active");
 
         const dataFilter = e.currentTarget.dataset.filter;
+        console.log(dataFilter);
 
         filterItems.forEach(function (item) {
           if (dataFilter === "all") {

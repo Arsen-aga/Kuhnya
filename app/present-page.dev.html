@@ -1,0 +1,136 @@
+<!--=include header.html -->
+<main class="main" id="present-page">
+
+  <section class="present-action">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/kuhni/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/kuhni/">Акции</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current">Подарки при покупке техники</span>
+          </li>
+        </ul>
+      </div>
+      <div class="present-action__inner">
+        <div class="present-action__left">
+          <h1 class="present-action__title">
+            ПОДАРКИ ПРИ
+            ПОКУПКЕ ТЕХНИКИ
+          </h1>
+          <p class="present-action__btn _main-btn">
+            Срок акции: до 31 января
+          </p>
+          <h3 class="present-action__info">
+            Подробности акции
+          </h3>
+          <ul class="present-action__list">
+            <li class="present-action__item">
+              При покупке 4-х единиц техники Maunfeld, Kuppersberg,
+              Korting — 4 товар в подарок
+            </li>
+            <li class="present-action__item">
+              При покупке духового шкафа и варочной поверхности
+              KRONA — 50% скидка на посудомойку
+            </li>
+            <li class="present-action__item">
+              При покупке 4-х единиц встраиваемой техники
+              KRONA — посудомойка в подарок
+            </li>
+            <li class="present-action__item">
+              При покупке варочной поверхности и духового шкафа
+              OASIS- блендер или чайник в подарок
+            </li>
+            <li class="present-action__item">
+              При покупке варочной поверхности и духового шкафа
+              LEX — полно встраиваемая вытяжка в подарок
+            </li>
+            <li class="present-action__item">
+              При покупке 3-х единиц встраиваемой техники HANSA
+              из разных товарных групп — полно встраиваемая вытяжка
+              в подарок
+            </li>
+          </ul>
+        </div>
+        <div class="present-action__right">
+          <div class="present-action__right-wrapper">
+            <img class="present-action__right-img" src="images/front-page/items/2.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="your-selection">
+    <div class="container">
+      <div class="your-selection__inner">
+        <div class="your-selection__img-wrapper">
+          <img class="your-selection__img" src="images/one/3.webp" alt="">
+        </div>
+        <form class="your-selection__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="from" value="Получить сертификат на акцию">
+          <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+          <h3 class="your-selection__title">
+            Понравилась акция?
+          </h3>
+          <p class="your-selection__text">
+            Получить электронный сертификат и
+            воспользуйтесь им в любом из наших салонов
+          </p>
+          <div class="your-selection__item">
+            <p class="your-selection__item-title">
+              1. Где вам удобно получить подборку акций?
+            </p>
+            <div class="your-selection__item-socials">
+              <input class="your-selection__item-inp" type="radio" name="social" id="call" value="call">
+              <label for="call" class="your-selection__item-label _light-btn">
+                <span>Звонок</span>
+                <img src="images/icons/phone-white.svg" alt="">
+              </label>
+              <input class="your-selection__item-inp" type="radio" name="social" id="whatsapp" value="whatsapp">
+              <label for="whatsapp" class="your-selection__item-label _light-btn">
+                <span>WhatsApp</span>
+                <img src="images/icons/whatsapp.svg" alt="">
+              </label>
+              <input class="your-selection__item-inp" type="radio" name="social" id="telegram" value="telegram">
+              <label for="telegram" class="your-selection__item-label _light-btn">
+                <span>Telegram</span>
+                <img src="images/icons/tg.svg" alt="">
+              </label>
+            </div>
+          </div>
+          <div class="your-selection__item">
+            <p class="your-selection__item-title">
+              2. Введите номер телефона
+            </p>
+            <input class="your-selection__item-tel" type="tel" placeholder="+7 (900) 000-00-00" required>
+          </div>
+          <button class="your-selection__form-btn _main-btn" type="submit">
+            Получить сертификат на акцию
+          </button>
+          <label class="your-selection__form-checkbox">
+            <input type="checkbox" required>
+            <span></span>
+            <p>
+              Я принимаю условия <a href="#">политики конфиденциальности</a>
+            </p>
+          </label>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="other-action">
+    <div class="container">
+      <h2 class="_title portfolio__title">
+        Возможно вас так же 
+        <span>заинтересуют другие акции</span>
+      </h2>
+      <!--=include kebab-block.html -->
+    </div>
+  </section>
+
+</main>
+<!--=include footer.html -->

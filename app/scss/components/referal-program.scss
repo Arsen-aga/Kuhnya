@@ -1,0 +1,120 @@
+.loyalty-program {
+  &__inner {
+    padding-top: 50px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    height: 286px;
+  }
+
+  &__item-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__item-title {
+    @extend %jost-500;
+    font-size: 28px;
+    line-height: calc(36/28*100%);
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item-btn {
+    max-width: 240px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 14px;
+
+    &::before {
+      height: 12px;
+      width: 12px;
+      background-image: url('../images/icons/arrow-top.svg');
+    }
+  }
+}
+
+
+@media (max-width: 1230px) {
+  .loyalty-program {
+    &__item {
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  .loyalty-program {
+    &__title {
+      font-size: 34px;
+    }
+
+    .coursor {
+      display: none;
+    }
+
+    &__items {
+      gap: 10px;
+    }
+
+    &__item {
+      padding: 20px;
+      height: 220px;
+    }
+
+    &__item-title {
+      font-size: 24px;
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .loyalty-program {
+    &__title {
+      font-size: 32px;
+    }
+
+    .coursor {
+      display: flex;
+    }
+
+    br{
+      display: block;
+    }
+
+    &__items {
+      overflow: auto;
+      padding-bottom: 15px;
+    }
+
+    &__item-btn{
+      height: 40px;
+      font-size: 12px;
+      max-width: 185px;
+    }
+  }
+}

@@ -1,0 +1,252 @@
+.present-action {
+  &__inner {
+    padding-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__left {
+    max-width: 620px
+  }
+
+  &__title {
+    @extend %jost-500;
+    font-size: 54px;
+    line-height: calc(60/54*100%);
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    max-width: 247px;
+    height: 42px;
+    @extend %jost-500;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    @extend %jost-500;
+    font-size: 28px;
+    line-height: calc(36/28*100%);
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding-left: 23px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 13px;
+      height: 13px;
+      background-image: url('../images/icons/star.svg');
+      left: 0;
+      top: 6px;
+    }
+  }
+
+  &__right {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1230px) {
+  .present-action {
+    &__title {
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+
+    &__info {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      margin-bottom: 5px;
+    }
+
+    &__right-wrapper {
+      height: 100%;
+    }
+
+    &__right-img {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+.present-action {
+  &__inner{
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  &__inner{
+    gap: 20px;
+  }
+  &__left{
+    max-width: 370px;
+  }
+
+  &__title{
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  &__btn{
+    margin-bottom: 10px;
+  }
+}
+}
+@media (max-width: 767.98px) {
+.present-action {
+  &__right{
+    display: none;
+  }
+  &__left{
+    max-width: none;
+  }
+}
+}
+
+
+#present-page {
+
+  .your-selection {
+    margin-bottom: 100px;
+
+    &__img-wrapper {
+      max-width: 612px;
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+
+    &__item-title {
+      @extend %jost-600;
+      font-size: 14px;
+      line-height: calc(22/14*100%);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    &__item-socials {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    &__item-inp {
+      display: none;
+
+      &:checked+.your-selection__item-label {
+        border-color: green;
+      }
+    }
+
+    &__item-label {
+      text-transform: none;
+      height: 44px;
+      gap: 10px;
+      font-size: 16px;
+      line-height: calc(24/16*100%);
+      color: $default-5;
+      padding: 0 20px;
+      border-radius: 10px;
+      max-width: 140px;
+      width: 100%;
+
+      &::before {
+        display: none;
+      }
+
+      span {
+        @extend %jost-400;
+      }
+
+      &:last-child {
+        max-width: 128px;
+      }
+    }
+
+    &__item-tel {
+      background-color: #FAFBFC;
+      border: 1px solid #F1F1F1;
+      border-radius: 12px;
+      padding: 28px 30px;
+      font-size: 22px;
+      line-height: calc(30/22*100%);
+      color: $default-4;
+      max-width: 428px;
+      width: 100%;
+      @extend %jost-400;
+      margin-bottom: 20px;
+    }
+  }
+
+  .filters-action {
+    display: none;
+  }
+}
+
+@media (max-width: 991.8px) {
+#present-page {
+  .your-selection {
+    margin-bottom: 40px;
+
+        &__title {
+            font-size: 26px;
+            margin-bottom: 5px;
+          }
+        
+          &__text {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+        
+          &__item-socials {
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+          }
+        
+          &__item-label {
+            max-width: 120px;
+            font-size: 14px;
+        
+            &:last-child {
+              max-width: 120px;
+            }
+          }
+        
+          &__item-tel {
+            padding: 20px 25px;
+            font-size: 20px;
+            height: 76px;
+            margin-bottom: 10px;
+          }
+        
+          &__item-btn {
+            font-size: 14px;
+            height: 76px;
+            margin-bottom: 12px;
+          }
+  }
+}
+}
