@@ -1,0 +1,95 @@
+<!--=include header.html -->
+<main class="main" id="contact-page">
+  <section class="front-block">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/kuhni/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__current">Контакты</span>
+          </li>
+        </ul>
+      </div>
+      <div class="kitchen-media__bottom front-block__bottom">
+        <div class="kitchen-media__left">
+          <h3 class="kitchen-media__left-title _title-light">
+            <span>
+              Приходите<br>
+              в один из салонов<br>
+              «Любимая кухня»:
+            </span>
+          </h3>
+          <p class="kitchen-media__left-text">
+            Мы угостим вас ароматным кофе,
+            английским чаем и разработаем
+            проект кухни вашей мечты
+          </p>
+          <a class="kitchen-media__left-btn _main-btn" href="#">
+            Записаться на встречу<br>
+            с дизайнером в салоне
+          </a>
+        </div>
+        <a class="kitchen-media__right" href="https://m.youtube.com/watch?v=zuPeJ2tERwU" data-fancybox="">
+          <img class="kitchen-media__right-img" src="images/kitchen-media/right-img.webp" alt="">
+          <!--=include play-btn.html -->
+          <p class="kitchen-media__right-text">
+            <span>Посмотрите, как проходит</span><br>
+            <span>встреча в салоне</span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="meeting">
+    <div class="container">
+      <h2 class="_title meeting__title">
+        <span>На встрече</span> в салоне вы сможете:
+      </h2>
+      <!--=include meeting.html -->
+    </div>
+  </section>
+  <!--=include filters-city.html -->
+  <section class="visiting-time">
+    <div class="container">
+      <div class="visiting-time__inner">
+        <h2 class="_title visiting-time__title">
+          Введите ваш адрес и <span>мы<br>
+            подберем ближайший</span> к вам салон
+        </h2>
+        <form class="visiting-time__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="from" value="Получить адрес ближайшего салона">
+          <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+          <div class="visiting-time__item">
+            <p class="visiting-time__item-text">
+              Адрес: город и улица
+            </p>
+            <div class="visiting-time__inp-wrapper">
+              <input class="visiting-time__item-inp" type="text" name="address" placeholder="Введите ваш адрес">
+            </div>
+          </div>
+          <div class="visiting-time__item">
+            <p class="visiting-time__item-text">
+              Ваш номер телефона
+            </p>
+            <div class="visiting-time__inp-wrapper">
+              <input class="visiting-time__item-inp" type="tel" name="time" placeholder="+7 (900) 000-00-00">
+            </div>
+          </div>
+          <button class="visiting-time__btn _main-btn" type="submit">
+            Получить адрес<br>
+            ближайшего салона
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="map-block">
+    <h2 class="_title visiting-time__title">
+      Или <span>выберите салон</span> на карте
+    </h2>
+    <div class="map" id="map"></div>
+  </section>
+</main>
+<!--=include footer.html -->

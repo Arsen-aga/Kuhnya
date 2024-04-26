@@ -6028,6 +6028,57 @@ body {
     max-width: 185px;
   }
 }
+#contact-page .front-block {
+  background-image: url("../images/front-page/6.webp");
+}
+#contact-page .front-block__bottom {
+  padding: 90px 0 111px;
+}
+#contact-page .visiting-time__inp-wrapper::after {
+  display: none;
+}
+
+@media (max-width: 991.8px) {
+  #contact-page .front-block__bottom {
+    padding: 40px 0 0;
+  }
+}
+@media (max-width: 575.98px) {
+  #contact-page .kitchen-media__left-title {
+    text-align: left;
+  }
+}
+.map-block {
+  max-width: 1880px;
+  padding: 0 15px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.map {
+  border-radius: 50px;
+  overflow: hidden;
+  height: 700px;
+}
+.map .marker {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #EC1111;
+  font-size: 0;
+  line-height: 0;
+}
+
+@media (max-width: 1230px) {
+  .map {
+    height: 500px;
+  }
+}
+@media (max-width: 991.8px) {
+  .map {
+    height: 350px;
+  }
+}
 .header-top {
   background-color: #2D201D;
   padding: 13px 0;
