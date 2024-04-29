@@ -21,6 +21,7 @@
 @import './components/adviсe-single-page.scss';
 @import './components/referal-program.scss';
 @import './components/contact-page.scss';
+@import './components/single-page.scss';
 
 .header-top {
   background-color: $accent;
@@ -1370,6 +1371,12 @@
 
     &__left-text {
       font-size: 22px;
+    }
+
+    &__bottom{
+      br{
+        display: block;
+      }
     }
   }
 }
