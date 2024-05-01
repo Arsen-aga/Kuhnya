@@ -272,7 +272,6 @@
   &__items-inner {
     display: flex;
     gap: 50px;
-    margin-bottom: 40px;
   }
 
   &__left {
@@ -290,6 +289,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     &.active {
       background: #FFFFFF;
@@ -302,15 +302,21 @@
     }
   }
 
-  &__right-wrapper {
+  &__right-item {
     &.hidden {
       display: none;
     }
+  }
 
+  &__right-wrapper {
     width: 730px;
     position: relative;
     padding-bottom: 44.11%;
+    margin-bottom: 40px;
 
+    &.hidden{
+      display: none;
+    }
   }
 
   &__right-img {
@@ -326,7 +332,6 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-left: 350px;
   }
 
   &__items-btn {
@@ -364,16 +369,15 @@
   .confirmation-reviews {
     &__items-inner {
       gap: 30px;
-      margin-bottom: 20px;
     }
-
+    
     &__right-wrapper {
       width: 630px;
+      margin-bottom: 20px;
     }
 
     &__items-btns {
       max-width: 630px;
-      margin-left: 330px;
     }
   }
 }
@@ -383,10 +387,6 @@
     margin: -40px auto 40px;
     padding: 40px 0;
     border-radius: 30px;
-
-    &__items-btns {
-      margin-left: auto;
-    }
 
     &__subtitle {
       margin-bottom: 30px;
@@ -402,7 +402,6 @@
       max-width: none;
       gap: 10px;
     }
-
 
     &__items-btns {
       max-width: none;
@@ -428,13 +427,12 @@
       margin-bottom: 0;
     }
 
-    &__right-wrapper {
-      width: auto;
-      padding: 0;
+    &__right{
+      width: 100%;
     }
 
-    &__right-img {
-      position: static;
+    &__right-wrapper {
+      width: auto;
     }
 
     &__items-btn {
@@ -520,13 +518,14 @@
       content: '';
       position: absolute;
       display: block;
-      width: 27px;
+      width: 24px;
       height: 20px;
       left: 37px;
       top: -17px;
       background-image: url('../images/icons/polygon-cloud.svg');
       background-repeat: no-repeat;
       background-position: center;
+      background-color: $bg;
     }
   }
 

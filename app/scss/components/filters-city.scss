@@ -55,6 +55,10 @@
   &__inner {
     display: flex;
     gap: 40px;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   &__left {
@@ -63,6 +67,7 @@
     padding: 10px 10px 30px;
     max-width: 420px;
     width: 100%;
+    height: fit-content;
   }
 
   &__pagination {
@@ -338,7 +343,8 @@
 
     &__title {
       font-size: 28px;
-      a{
+
+      a {
         font-size: 28px;
       }
     }

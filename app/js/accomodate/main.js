@@ -123,6 +123,7 @@ function getRestThePicture(num) {
   `;
 }
 
+//selects
 if (document.querySelector(".filters-select__select")) {
   const selectContainers = document.querySelectorAll(".filters-select__select");
 
@@ -136,7 +137,6 @@ if (document.querySelector(".filters-select__select")) {
     header.addEventListener("click", function (e) {
       e.preventDefault();
       if (list.style.display === "none" || list.style.display === "") {
-        console.log(1);
         closeOtherSelects();
         list.style.display = "flex";
         header.classList.add("_active");
@@ -309,19 +309,9 @@ if (document.querySelectorAll(".filters")) {
   filters.forEach((filter) => {
     const filterBtns = filter.querySelectorAll(".filters__btn");
     const filterItems = filter.querySelectorAll(".filters__item");
-    const filterPrev = filter.querySelector(".filters__prev");
-    const filterNext = filter.querySelector(".filters__next");
-    
-    // console.log(filterItems);
-
-    let count = 0;
 
     filterBtns.forEach(function (btn, index) {
       btn.addEventListener("click", function (e) {
-        count = index;
-        if (filterPrev && filterNext) {
-          hiddenArrow(filterNext, filterPrev, count, filterItems.length - 1);
-        }
 
         filterBtns.forEach((btn) => btn.classList.remove("active"));
         btn.classList.add("active");
@@ -343,34 +333,41 @@ if (document.querySelectorAll(".filters")) {
         });
       });
     });
+  });
+}
 
-    if (filterPrev && filterNext) {
-      filterNext.addEventListener("click", function (e) {
-        if (count < filterItems.length - 1) {
-          filterItems[count].classList.add("hidden");
-          filterBtns[count].classList.remove("active");
 
-          count++;
-          filterItems[count].classList.remove("hidden");
-          filterBtns[count].classList.add("active");
+// reviews slider
+if (document.querySelector(".reviews")) {
+  const sliders = document.querySelectorAll(".reviews");
+  sliders.forEach((slider) => {
+    const slides = slider.querySelectorAll(".review");
+    const btnPrev = slider.querySelector(".filters__prev");
+    const btnNext = slider.querySelector(".filters__next");
+    let count = 0;
+    let lengthSlides = slides.length;
 
-          hiddenArrow(filterNext, filterPrev, count, filterItems.length - 1);
-        }
-      });
+    btnNext.addEventListener("click", function (e) {
+      if (count < lengthSlides - 1) {
+        slides[count].classList.add("hidden");
 
-      filterPrev.addEventListener("click", function (e) {
-        if (count > 0) {
-          filterItems[count].classList.add("hidden");
-          filterBtns[count].classList.remove("active");
+        count++;
+        slides[count].classList.remove("hidden");
 
-          count--;
-          filterItems[count].classList.remove("hidden");
-          filterBtns[count].classList.add("active");
+        hiddenArrow(btnNext, btnPrev, count, lengthSlides - 1);
+      }
+    });
 
-          hiddenArrow(filterNext, filterPrev, count, filterItems.length - 1);
-        }
-      });
-    }
+    btnPrev.addEventListener("click", function (e) {
+      if (count > 0) {
+        slides[count].classList.add("hidden");
+
+        count--;
+        slides[count].classList.remove("hidden");
+
+        hiddenArrow(btnNext, btnPrev, count, lengthSlides - 1);
+      }
+    });
   });
 
   function hiddenArrow(next, prev, count, itemsLength) {
@@ -400,6 +397,7 @@ if (document.querySelector(".slider-items__item-like")) {
 }
 
 
+// map
 if (document.getElementById("map")) {
   initMap();
 
@@ -439,4 +437,30 @@ if (document.getElementById("map")) {
     const newMarker = addNewMarker();
     newMarker(60.57399142631671, 56.83827572260309);
   }
+}
+
+
+// show city
+if(document.querySelector('.filters-city')){
+
+  const filtersCity = document.querySelector('.filters-city');
+  const inputs = filtersCity.querySelectorAll("input");
+  const cityList = filtersCity.querySelector(".filters-select__select-list");
+  const filterContent = filtersCity.querySelectorAll(".filters-city__inner");
+
+  inputs.forEach(input =>{
+    input.addEventListener("input", function(e){
+      const id = e.target.id;
+      cityList.style.display = 'none';
+
+      filterContent.forEach(content =>{
+        if(content.classList.contains(id)){
+          content.classList.remove('hidden');
+        }else{
+          content.classList.add('hidden');
+        }
+      })
+    });
+  })
+
 }
